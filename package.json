@@ -1,0 +1,15 @@
+{
+  "name": "probelokbot",
+  "version": "1.0.0",
+  "description": "telegram bot for sports nutrition",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node src/app.js"
+  },
+  "author": "Aleksandr Bobyr",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^3.30.1"
+  }
+}
