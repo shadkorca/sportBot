@@ -61,31 +61,17 @@ class CartHandler {
     }
   };
 
-  // getLastProductName() {
-  //   if (this._cart.length)
-  //     return this._cart[this._cart.length -1 ];
-  //   return {}
-  // }
-  //
-  // updateLastProduct(quantity=0) {
-  //   if (this.getLastProductName()) {
-  //     this.getLastProductName().quantity = quantity
-  //   }
-  // }
-
-  // calculateAmountOld () {
-  //   let amount = 0;
-  //   this._cart.forEach(item => {
-  //     amount += item.price * item.quantity;
-  //     console.log(`${amount} consist of ${item.price} and ${item.quantity}`)
-  //   });
-  //   return amount
-  // };
-
   calculateAmount() {
     return this._cart.reduce(
-      (acc, item, ) => acc + item.price * item.quantity,
+      (acc, item ) => acc + item.price * item.quantity,
       0
+    );
+  }
+
+  dumpProducts() {
+    return this._cart.reduce(
+      (acc, item) => acc + `${item.name} за ${item.price}грн - ${item.quantity}шт.\n`,
+      ''
     );
   }
 

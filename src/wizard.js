@@ -119,7 +119,10 @@ cartStep.use(async ctx => {
 
   const amount = await Cart.calculateAmount();
 
-  await ctx.reply(`The chosen good are cost ${amount}💵 -final step`,
+  const productsNames = await Cart.dumpProducts();
+  console.log('product names', productsNames);
+
+  await ctx.reply(`${productsNames}\nThe chosen good are cost ${amount}💵 -final step`,
     Markup.inlineKeyboard([
       [Markup.callbackButton(tr[userLocale].pay(amount), 'pay')],
       [Markup.callbackButton(tr[userLocale].choose_more, 'vubrat')],
@@ -173,6 +176,7 @@ const order = new WizardScene(
   cartStep,
   ratingStep
 );
-order.leave(ctx => ctx.reply(tr[userLocale].main_menu_btn));
 
-module.exports = order
+order.leave(ctx => ctx.reply(tr[userLocale].main_menu_btn, keyboard));
+
+module.exports = order;

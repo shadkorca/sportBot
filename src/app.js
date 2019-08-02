@@ -1,15 +1,10 @@
 const Telegraf = require('telegraf');
 const data = require('./data');
-const {CartHandler} = require('./utils');
 const tr = require('./locales');
 
 const {Markup} = Telegraf;
-const {Extra} = Telegraf;
 const session = require('telegraf/session');
 const Stage = require('telegraf/stage');
-const WizardScene = require('telegraf/scenes/wizard');
-const Composer = require('telegraf/composer');
-const Scene = require('telegraf/scenes/base');
 
 const bot = new Telegraf(data.token);
 
@@ -42,9 +37,6 @@ const bot = new Telegraf(data.token);
 //       "contact": "✍️ Обратная связь"
 //   }
 
-let cart = [];
-let Cart = new CartHandler();
-let wizard_anchor = 0;
 let userLocale = 'ua';
 
 const mainMenuButton = [Markup.callbackButton(tr[userLocale].main_menu_btn, 'back_to_main')];
