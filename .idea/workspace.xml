@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c009a3a-1093-487e-bf6c-933ffec18c1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5c009a3a-1093-487e-bf6c-933ffec18c1d" name="Default Changelist" comment="scenes refactor">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/wizard.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -43,6 +38,11 @@
   </component>
   <component name="ProjectId" id="1OPGE8qNbQS6wznrCrg7ZeSg1E4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -50,6 +50,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
@@ -59,17 +60,22 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunManager">
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="npm.serve" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,8 +106,19 @@
       <workItem from="1564165986519" duration="4581000" />
       <workItem from="1564209050133" duration="13968000" />
       <workItem from="1564682818069" duration="982000" />
-      <workItem from="1564763598099" duration="1235000" />
+      <workItem from="1564763598099" duration="1294000" />
+      <workItem from="1566476922767" duration="3160000" />
+      <workItem from="1567515360751" duration="356000" />
+      <workItem from="1585830100822" duration="734000" />
     </task>
+    <task id="LOCAL-00001" summary="scenes refactor">
+      <created>1585830780789</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585830780789</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,5 +136,39 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="scenes refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="scenes refactor" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="303" y="51" key="CommitChangelistDialog2" timestamp="1585830852454">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="303" y="51" key="CommitChangelistDialog2/0.0.1440.900/-254.-1080.1920.1080@0.0.1440.900" timestamp="1585830852454" />
+    <state width="1398" height="93" key="GridCell.Tab.0.bottom" timestamp="1585830553482">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="93" key="GridCell.Tab.0.bottom/0.0.1440.900/-254.-1080.1920.1080@0.0.1440.900" timestamp="1585830553482" />
+    <state width="1398" height="93" key="GridCell.Tab.0.center" timestamp="1585830553481">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="93" key="GridCell.Tab.0.center/0.0.1440.900/-254.-1080.1920.1080@0.0.1440.900" timestamp="1585830553481" />
+    <state width="1398" height="93" key="GridCell.Tab.0.left" timestamp="1585830553480">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="93" key="GridCell.Tab.0.left/0.0.1440.900/-254.-1080.1920.1080@0.0.1440.900" timestamp="1585830553480" />
+    <state width="1398" height="93" key="GridCell.Tab.0.right" timestamp="1585830553482">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="93" key="GridCell.Tab.0.right/0.0.1440.900/-254.-1080.1920.1080@0.0.1440.900" timestamp="1585830553482" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585830797503">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/-254.-1080.1920.1080@0.0.1440.900" timestamp="1585830797503" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585830391294">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/-254.-1080.1920.1080@0.0.1440.900" timestamp="1585830391294" />
   </component>
 </project>
