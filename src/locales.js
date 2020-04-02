@@ -19,6 +19,7 @@ module.exports = {
     protein_type_whey: 'Сывороточный',
     protein_type_casein: 'Казеиновый',
     like: 'Нравится ?',
+    wrong_number: 'Похоже, Вы ввели неправильное значение,\nэто должно быть натуральное число',
   },
   ua: {
     start(ctx) {return `Вітаю Вас, *${ctx.message.from.first_name}*.\nЩоб зробити замовлення - натисніть _Придбати_`},
@@ -40,5 +41,6 @@ module.exports = {
     protein_type_whey: 'Сироватковий',
     protein_type_casein: 'Казеїновий',
     like: 'Подобається ?',
+    wrong_number: 'Схожу, Ви ввели невірний значення,\nце має бути натульне число',
   }
 };

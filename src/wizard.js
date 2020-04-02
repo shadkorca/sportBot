@@ -25,6 +25,11 @@ const buyKeyboard = Markup.inlineKeyboard([
   mainMenuButton
 ]).extra();
 
+const mainMenuKeyboard = Markup.inlineKeyboard([
+  // Markup.callbackButton(tr[userLocale].main_menu_btn, 'back_to_main')
+  mainMenuButton
+]).extra();
+
 
 const choosenProductHandler = new Composer();
 choosenProductHandler.action('protein', async ctx => {
@@ -97,22 +102,23 @@ numberOfPackeges.action('back_to_main', async ctx => {
   return ctx.scene.leave('order')
 });
 numberOfPackeges.action('buy', async ctx => {
-  await ctx.reply(tr[userLocale].packages_number_quest);
+  await ctx.reply(tr[userLocale].packages_number_quest, mainMenuKeyboard);
   return ctx.wizard.next()
 });
-numberOfPackeges.use(async ctx => await ctx.reply(tr[userLocale].packages_number_quest));
+numberOfPackeges.use(async ctx => await ctx.reply(tr[userLocale].packages_number_quest, mainMenuKeyboard));
 
 const cartStep = new Composer();
 cartStep.use(async ctx => {
   if (!ctx.message) {
-    console.log('ctx message', ctx.message);
-    return
+    return console.log('ctx message', ctx.message);
   }
 
   await Cart.updateOrder(ctx.message.text);  // если неправильное число - ошибка
   if (Cart.error) {
     // вопрос будет висеть либо до правильного ввода, либо до выхода в главное меню
-    return await ctx.reply(Cart.error, Markup.inlineKeyboard([mainMenuButton]));
+    console.log(' input correct number');
+    return await ctx.reply(Cart.error, mainMenuKeyboard);
+    // return ctx.reply(Cart.error, Markup.inlineKeyboard(mainMenuButton));
   }
 
   await Cart.updateCart();

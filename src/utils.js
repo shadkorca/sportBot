@@ -1,3 +1,5 @@
+const tr = require('./locales');
+let userLocale = 'ua';
 
 const validateCount = (inputNum=0) => {
   if (!isNaN(inputNum) && parseInt(inputNum)>0) {
@@ -7,9 +9,9 @@ const validateCount = (inputNum=0) => {
     return 0
 };
 
-const tr = {
-  wrong_number: 'Похоже, Вы ввели неправильное значение,\nэто должно быть натуральное число',
-};
+// const tr = {
+//   wrong_number: 'Похоже, Вы ввели неправильное значение,\nэто должно быть натуральное число',
+// };
 
 class CartHandler {
   constructor() {
@@ -46,8 +48,8 @@ class CartHandler {
       console.log('no error');
       return parseInt(quantity)
     } else {
-      this.error = tr.wrong_number;
-      console.log('error', this.error);
+      this.error = tr[userLocale].wrong_number;
+      // this.error = tr.wrong_number;
       return 0
     }
   };
